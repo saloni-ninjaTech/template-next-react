@@ -1,8 +1,17 @@
 import Head from "next/head";
-// import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import { Inter } from "next/font/google";
+// import styles from "@/styles/Home.module.css";
 import Script from "next/Script";
-// const inter = Inter({ subsets: ["latin"] });
+import Facts from "@/components/Facts";
+import About from "@/components/About";
+import Features from "@/components/Features";
+import Services from "@/components/Services";
+import PricingPlan from "@/components/PricingPlan";
+import Quote from "@/components/Quote";
+import Testimonials from "@/components/Testimonials";
+import Team from "@/components/Team";
+import Blog from "@/components/Blog";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,6 +23,20 @@ export default function Home() {
 
         {/* <!-- Favicon --> */}
         <link href="/favicon.ico" rel="icon"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        ></link>
+        {/* <!-- Icon Font Stylesheet --> */}
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+          rel="stylesheet"
+        ></link>
+
         {/* <!-- Libraries Stylesheet --> */}
         <link
           href="/lib/owlcarousel/assets/owl.carousel.min.css"
@@ -32,7 +55,10 @@ export default function Home() {
         src="https://code.jquery.com/jquery-3.4.1.min.js"
       ></Script>
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></Script>
-
+      <Script
+        src="https://kit.fontawesome.com/a076d05399.js"
+        crossorigin="anonymous"
+      ></Script>
       <Script src="/lib/wow/wow.min.js"></Script>
       <Script src="/lib/easing/easing.min.js"></Script>
       <Script src="/lib/waypoints/waypoints.min.js"></Script>
@@ -41,13 +67,16 @@ export default function Home() {
 
       {/* <!-- Template JavaScript --> */}
       <Script strategy="lazyOnload" src="/js/main.js"></Script>
-      <main className={styles.main}>
-        <div
-          id="spinner"
-          class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-        >
-          <div class="spinner"></div>
-        </div>
+      <main>
+        <Facts />
+        <About />
+        <Features />
+        <Services />
+        <PricingPlan />
+        <Quote />
+        <Testimonials />
+        <Team />
+        <Blog />
       </main>
     </>
   );
