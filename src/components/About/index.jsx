@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function About() {
@@ -30,7 +31,7 @@ function About() {
             <h4 className="text-primary mb-0">+012 345 6789</h4>
           </div>
         </div>
-        <a href="quote.html" className="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
+        <Link href="/Quote" className="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</Link>
       </div>
       <div className="col-lg-5" style={{minHeight: 500}}>
         <div className="position-relative h-100">

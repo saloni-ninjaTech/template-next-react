@@ -1,9 +1,9 @@
 import React from 'react'
 import Blog from '@/components/Blog';
-function Blog() {
+function BlogPage() {
   return (
     <Blog />
   )
 }
 
-export default Blog
+export default BlogPage;
