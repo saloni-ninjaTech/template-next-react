@@ -40,8 +40,8 @@ function Quote() {
                 <input type="email" className="form-control bg-light border-0" placeholder="Your Email" style={{height: 55}} />
               </div>
               <div className="col-12">
-                <select className="form-select bg-light border-0" style={{height: 55}}>
-                  <option selected>Select A Service</option>
+                    <select defaultValue={0}  className="form-select bg-light border-0" style={{height: 55}}>
+                  <option value={0}>Select A Service</option>
                   <option value={1}>Service 1</option>
                   <option value={2}>Service 2</option>
                   <option value={3}>Service 3</option>
