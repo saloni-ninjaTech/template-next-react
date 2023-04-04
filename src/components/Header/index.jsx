@@ -76,13 +76,13 @@ function Header() {
         </Grid>
       </Grid>
       <Grid item className="col-lg-4 text-center text-lg-end">
-        <div className="d-inline-flex align-items-center" style={{height: 45}}>
+        <Grid className="d-inline-flex align-items-center" style={{height: 45}}>
           <IconButton className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><Twitter fontSize='small'  /></IconButton>
           <IconButton className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><Facebook fontSize='small' /></IconButton>
           <IconButton className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><LinkedIn fontSize='small'  /></IconButton>
           <IconButton className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href><Instagram fontSize='small' /></IconButton>
           <IconButton className="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href><YouTube fontSize='small' /></IconButton>
-        </div>
+        </Grid>
       </Grid>
     </Grid>
   </Grid>
@@ -96,59 +96,59 @@ function Header() {
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span className="fa fa-bars" />
       </button>
-      <div className="collapse navbar-collapse" id="navbarCollapse">
-        <div className="navbar-nav ms-auto py-0">
+      <Grid className="collapse navbar-collapse" id="navbarCollapse">
+        <Grid className="navbar-nav ms-auto py-0">
           <Link href="/" className={`nav-item nav-link ${pathName==="/" ? "active" : ""}`}>Home</Link>
           <Link href="/About" className={`nav-item nav-link ${pathName==="/About" ? "active" : ""}`}>About</Link>
           <Link href="/Service" className={`nav-item nav-link ${pathName==="/Service" ? "active" : ""}`}>Service</Link>
-          <div className="nav-item dropdown">
+          <Grid className="nav-item dropdown">
             <a href="#" className={`nav-link dropdown-toggle ${pathName==="/Blog" || pathName==="/Detail" ? "active" : ""}`} data-bs-toggle="dropdown">Blog</a>
-            <div className="dropdown-menu m-0">
+            <Grid className="dropdown-menu m-0">
               <Link href="/Blog" className={`dropdown-item ${pathName==="/Blog" ? "active" : ""}`}>Blog Grid</Link>
               <Link href="/Detail" className={`dropdown-item ${pathName==="/Detail" ? "active" : ""}`}>Blog Detail</Link>
-            </div>
-          </div>
-          <div className="nav-item dropdown">
+            </Grid>
+          </Grid>
+          <Grid className="nav-item dropdown">
             <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-            <div className="dropdown-menu m-0">
+            <Grid className="dropdown-menu m-0">
               <Link href="/PricingPlan" className={`dropdown-item ${pathName==="/PricingPlan" ? "active" : ""}`}>Pricing Plan</Link>
               <Link href="/Feature" className={`dropdown-item ${pathName==="/Feature" ? "active" : ""}`}>Our features</Link>
               <Link href="/Team" className={`dropdown-item ${pathName==="/Team" ? "active" : ""}`}>Team Members</Link>
               <Link href="/Testimonial" className={`dropdown-item ${pathName==="/Testimonial" ? "active" : ""}`}>Testimonial</Link>
               <Link href="/Quote" className={`dropdown-item ${pathName==="/Quote" ? "active" : ""}`}>Free Quote</Link>
-            </div>
-          </div>
+            </Grid>
+          </Grid>
           <Link href="/Contact" className={`nav-item nav-link ${pathName==="/Contact" ? "active" : ""}`}>Contact</Link>
-        </div>
+        </Grid>
         <butaton type="button" className="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fa fa-search" /></butaton>
         {/* <a href="https://htmlcodex.com/startup-company-website-template" className="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> */}
-      </div>
+      </Grid>
         </nav>
-        {pathName === "/" ? (<div id="header-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
+        {pathName === "/" ? (<Grid id="header-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
+  <Grid className="carousel-inner">
+    <Grid className="carousel-item active">
       <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
-      <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <div className="p-3" style={{maxWidth: 900}}>
+      <Grid className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+        <Grid className="p-3" style={{maxWidth: 900}}>
           <h5 className="text-white text-uppercase mb-3 animated slideInDown">Creative &amp; Innovative</h5>
           <h1 className="display-1 text-white mb-md-4 animated zoomIn">Creative &amp; Innovative Digital Solution</h1>
           <Link href="/Quote" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</Link>
           <a href className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
-        </div>
-      </div>
-    </div>
-    <div className="carousel-item">
+        </Grid>
+      </Grid>
+    </Grid>
+    <Grid className="carousel-item">
       <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
-      <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <div className="p-3" style={{maxWidth: 900}}>
+      <Grid className="carousel-caption d-flex flex-column align-items-center justify-content-center">
+        <Grid className="p-3" style={{maxWidth: 900}}>
           <h5 className="text-white text-uppercase mb-3 animated slideInDown">Creative &amp; Innovative</h5>
           <h1 className="display-1 text-white mb-md-4 animated zoomIn">Creative &amp; Innovative Digital Solution</h1>
           <Link href="Quote" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</Link>
           <a href className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        </Grid>
+      </Grid>
+    </Grid>
+  </Grid>
   <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true" />
     <span className="visually-hidden">Previous</span>
@@ -157,18 +157,18 @@ function Header() {
     <span className="carousel-control-next-icon" aria-hidden="true" />
     <span className="visually-hidden">Next</span>
   </button>
-</div>
+</Grid>
 
-    ):(<div className="container-fluid bg-primary py-5 bg-header" style={{marginBottom: 90}}>
-      <div className="row py-5">
-        <div className="col-12 pt-lg-5 mt-lg-5 text-center">
+    ):(<Grid className="container-fluid bg-primary py-5 bg-header" style={{marginBottom: 90}}>
+      <Grid className="row py-5">
+        <Grid className="col-12 pt-lg-5 mt-lg-5 text-center">
               <h1 className="display-4 text-white animated zoomIn">{headerName}</h1>
           <a href className="h5 text-white">Home</a>
           <i className="far fa-circle text-white px-2" />
           <a href className="h5 text-white">{headerName}</a>
-        </div>
-      </div>
-          </div>
+        </Grid>
+      </Grid>
+          </Grid>
         )}
         
         
